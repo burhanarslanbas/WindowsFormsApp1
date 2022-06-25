@@ -92,7 +92,7 @@ namespace WindowsFormsApp1
                 }
                 // username = (string)dr["username"].ToString();
             }
-            else
+            else if (txtuser.Text == "Username" && txtpass.Text == "Password")
             {
                 MessageBox.Show("Kullanıcı Adı Veya Şifre'yi Kontrol Ediniz!");
             }
