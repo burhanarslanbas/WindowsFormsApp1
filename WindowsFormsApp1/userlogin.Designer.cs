@@ -92,7 +92,7 @@ namespace WindowsFormsApp1
             // btnlogin
             // 
             this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnlogin.Location = new System.Drawing.Point(288, 238);
+            this.btnlogin.Location = new System.Drawing.Point(299, 238);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(136, 26);
             this.btnlogin.TabIndex = 4;
