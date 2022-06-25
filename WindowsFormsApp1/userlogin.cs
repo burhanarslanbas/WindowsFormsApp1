@@ -27,6 +27,54 @@ namespace WindowsFormsApp1
         {
             kontrol();
         }
+
+        private void exitBtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void txtuser_Enter(object sender, EventArgs e)
+        {
+            if (txtuser.Text == "Username")
+            {
+                txtuser.Text = "";
+                label1.Visible = true;
+                txtuser.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtuser_Leave(object sender, EventArgs e)
+        {
+            if (txtuser.Text == "")
+            {
+                txtuser.ForeColor = Color.Gray;
+                txtuser.Text = "Username";
+                label1.Visible = false;
+            }
+        }
+
+        private void txtpass_Enter(object sender, EventArgs e)
+        {
+            if (txtpass.Text == "Password")
+            {
+                txtpass.Text = "";
+                txtpass.PasswordChar = '*';
+                txtpass.ForeColor = Color.Black;
+                label2.Visible = true;
+            }
+        }
+
+        private void txtpass_Leave(object sender, EventArgs e)
+        {
+            if (txtpass.Text == "")
+            {
+                txtpass.Text = "Password";
+                txtpass.ForeColor = Color.Gray;
+                txtpass.PasswordChar = '\0';
+                label2.Visible = false;
+            }
+        }
+
         public void kontrol()
         {
             sqlConnection1.Open();
