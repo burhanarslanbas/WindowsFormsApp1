@@ -46,32 +46,27 @@ namespace WindowsFormsApp1
             this.txtuser.Name = "txtuser";
             this.txtuser.Size = new System.Drawing.Size(200, 20);
             this.txtuser.TabIndex = 0;
-            this.txtuser.Text = "Username";
-            this.txtuser.Enter += new System.EventHandler(this.txtuser_Enter);
-            this.txtuser.Leave += new System.EventHandler(this.txtuser_Leave);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(262, 123);
+            this.label1.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(262, 124);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Username";
-            this.label1.Visible = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(262, 177);
+            this.label2.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(262, 178);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 16);
+            this.label2.Size = new System.Drawing.Size(67, 16);
             this.label2.TabIndex = 3;
             this.label2.Text = "Password";
-            this.label2.Visible = false;
             // 
             // txtpass
             // 
@@ -82,9 +77,6 @@ namespace WindowsFormsApp1
             this.txtpass.Name = "txtpass";
             this.txtpass.Size = new System.Drawing.Size(200, 20);
             this.txtpass.TabIndex = 2;
-            this.txtpass.Text = "Password";
-            this.txtpass.Enter += new System.EventHandler(this.txtpass_Enter);
-            this.txtpass.Leave += new System.EventHandler(this.txtpass_Leave);
             // 
             // btnlogin
             // 
