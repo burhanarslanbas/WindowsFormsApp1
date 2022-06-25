@@ -39,7 +39,7 @@ namespace WindowsFormsApp1
             // 
             // txtuser
             // 
-            this.txtuser.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtuser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtuser.ForeColor = System.Drawing.Color.Gray;
             this.txtuser.Location = new System.Drawing.Point(265, 143);
             this.txtuser.Multiline = true;
@@ -53,10 +53,10 @@ namespace WindowsFormsApp1
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(262, 123);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 17);
+            this.label1.Size = new System.Drawing.Size(71, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Username";
             this.label1.Visible = false;
@@ -65,17 +65,17 @@ namespace WindowsFormsApp1
             // 
             this.label2.AutoSize = true;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Location = new System.Drawing.Point(262, 177);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 17);
+            this.label2.Size = new System.Drawing.Size(68, 16);
             this.label2.TabIndex = 3;
             this.label2.Text = "Password";
             this.label2.Visible = false;
             // 
             // txtpass
             // 
-            this.txtpass.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtpass.ForeColor = System.Drawing.Color.Gray;
             this.txtpass.Location = new System.Drawing.Point(265, 197);
             this.txtpass.Multiline = true;
@@ -89,7 +89,7 @@ namespace WindowsFormsApp1
             // btnlogin
             // 
             this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnlogin.Location = new System.Drawing.Point(299, 238);
+            this.btnlogin.Location = new System.Drawing.Point(265, 234);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(136, 26);
             this.btnlogin.TabIndex = 4;
