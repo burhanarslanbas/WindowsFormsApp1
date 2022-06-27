@@ -35,7 +35,7 @@ namespace WindowsFormsApp1
             {
                 txtpass.Text = "";
                 txtuser.Text = "";
-                MessageBox.Show("Kullanıcı Adı ve Şifre boş bırakılamaz!");
+                MessageBox.Show("Kullanıcı Adı ve Şifre boş bırakılamaz!", "Hata");
             }
         }
         public void formgecisapp()
@@ -44,17 +44,6 @@ namespace WindowsFormsApp1
             this.Hide();
             frm.Show();
         }
-
-
-        private void txtpass_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == (char)13)
-            {
-                button1_Click(this, new EventArgs());
-
-            }
-        }
-
         public void kontrol()
         {
             sqlConnection1.Open();
@@ -67,7 +56,7 @@ namespace WindowsFormsApp1
             }
             else
             {
-                MessageBox.Show("Kullanıcı Adı veya Şifreyi tekrar kontrol ediniz.");
+                MessageBox.Show("Kullanıcı Adı veya Şifreyi tekrar kontrol ediniz.","Hata");
             }
             sqlConnection1.Close();
         }
