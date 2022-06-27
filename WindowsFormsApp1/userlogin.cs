@@ -56,8 +56,7 @@ namespace WindowsFormsApp1
         public void kontrol()
         {
             sqlConnection1.Open();
-            SqlCommand cmd = new SqlCommand("select * from Users");
-            cmd.Connection = sqlConnection1;
+            SqlCommand cmd = new SqlCommand("select username,password from Users",sqlConnection1);
             SqlDataReader dr = cmd.ExecuteReader();
             if (dr.Read())
             {

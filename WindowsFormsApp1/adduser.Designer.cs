@@ -36,6 +36,10 @@ namespace WindowsFormsApp1
             this.txtuser = new System.Windows.Forms.TextBox();
             this.cmbperm = new System.Windows.Forms.ComboBox();
             this.lblperm = new System.Windows.Forms.Label();
+<<<<<<< HEAD
+=======
+            this.sqlConnection1 = new System.Data.SqlClient.SqlConnection();
+>>>>>>> Update
             this.SuspendLayout();
             // 
             // btnadd
@@ -114,6 +118,15 @@ namespace WindowsFormsApp1
             this.lblperm.TabIndex = 11;
             this.lblperm.Text = "Perm";
             // 
+<<<<<<< HEAD
+=======
+            // sqlConnection1
+            // 
+            this.sqlConnection1.ConnectionString = "Data Source=arslanbas.database.windows.net;Initial Catalog=deneme;Persist Securit" +
+    "y Info=True;User ID=login;Password=Burhan123";
+            this.sqlConnection1.FireInfoMessageEventOnUserErrors = false;
+            // 
+>>>>>>> Update
             // adduser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -143,5 +156,9 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.TextBox txtuser;
         private System.Windows.Forms.ComboBox cmbperm;
         private System.Windows.Forms.Label lblperm;
+<<<<<<< HEAD
+=======
+        private System.Data.SqlClient.SqlConnection sqlConnection1;
+>>>>>>> Update
     }
 }
