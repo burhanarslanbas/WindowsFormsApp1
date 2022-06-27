@@ -133,6 +133,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.txtuser);
             this.Name = "adduser";
             this.Text = "adduser";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.adduser_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

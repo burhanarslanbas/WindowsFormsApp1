@@ -44,6 +44,12 @@ namespace WindowsFormsApp1
             this.Hide();
             frm.Show();
         }
+
+        private void userlogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+        }
+
         public void kontrol()
         {
             sqlConnection1.Open();

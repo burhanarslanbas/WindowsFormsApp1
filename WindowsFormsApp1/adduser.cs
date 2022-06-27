@@ -28,5 +28,12 @@ namespace WindowsFormsApp1
         {
             kullanıcıekle();
         }
+
+        private void adduser_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            app frm = new app();
+            this.Hide();
+            frm.Show();
+        }
     }
 }
