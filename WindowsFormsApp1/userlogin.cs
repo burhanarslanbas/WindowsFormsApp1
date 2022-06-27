@@ -23,6 +23,8 @@ namespace WindowsFormsApp1
             // MessageBox.Show(sqlConnection1.State.ToString());
         }
 
+
+
         private void button1_Click(object sender, EventArgs e)
         {
             if ((txtpass.Text != "") && (txtuser.Text != ""))
@@ -43,7 +45,7 @@ namespace WindowsFormsApp1
             frm.Show();
         }
 
-        
+
         private void txtpass_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)13)
@@ -56,19 +58,16 @@ namespace WindowsFormsApp1
         public void kontrol()
         {
             sqlConnection1.Open();
-            SqlCommand cmd = new SqlCommand("select username,password from Users",sqlConnection1);
+            SqlCommand cmd = new SqlCommand("select * from Users where username='" + txtuser.Text + "' AND password='" + txtpass.Text + "'", sqlConnection1);
             SqlDataReader dr = cmd.ExecuteReader();
             if (dr.Read())
             {
-                if ((dr["username"].ToString() == txtuser.Text) && (dr["password"].ToString() == txtpass.Text))
-                {
-                    formgecisapp();
-                }
-                else
-                {
-                    MessageBox.Show("Kullanıcı Adı veya Şifreyi tekrar kontrol ediniz.");
-                }
-                // username = (string)dr["username"].ToString();
+                formgecisapp();
+                //username = (string)dr["username"].ToString();
+            }
+            else
+            {
+                MessageBox.Show("Kullanıcı Adı veya Şifreyi tekrar kontrol ediniz.");
             }
             sqlConnection1.Close();
         }
