@@ -46,6 +46,7 @@ namespace WindowsFormsApp1
             this.txtuser.Name = "txtuser";
             this.txtuser.Size = new System.Drawing.Size(200, 20);
             this.txtuser.TabIndex = 0;
+            this.txtuser.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtpass_KeyPress);
             // 
             // label1
             // 
@@ -77,6 +78,7 @@ namespace WindowsFormsApp1
             this.txtpass.Name = "txtpass";
             this.txtpass.Size = new System.Drawing.Size(200, 20);
             this.txtpass.TabIndex = 2;
+            this.txtpass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtpass_KeyPress);
             // 
             // btnlogin
             // 

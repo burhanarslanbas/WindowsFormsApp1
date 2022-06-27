@@ -31,9 +31,28 @@ namespace WindowsFormsApp1
             }
             else
             {
+                txtpass.Text = "";
+                txtuser.Text = "";
                 MessageBox.Show("Kullanıcı Adı ve Şifre boş bırakılamaz!");
             }
         }
+        public void formgecisapp()
+        {
+            app frm = new app();
+            this.Hide();
+            frm.Show();
+        }
+
+        
+        private void txtpass_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                button1_Click(this, new EventArgs());
+
+            }
+        }
+
         public void kontrol()
         {
             sqlConnection1.Open();
@@ -44,7 +63,7 @@ namespace WindowsFormsApp1
             {
                 if ((dr["username"].ToString() == txtuser.Text) && (dr["password"].ToString() == txtpass.Text))
                 {
-                    MessageBox.Show("Bilgileriniz sistemde kayıtlıdır", "Giriş Başarılı");
+                    formgecisapp();
                 }
                 else
                 {
